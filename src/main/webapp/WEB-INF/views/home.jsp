@@ -17,11 +17,12 @@
 	
 	<a herf="${contextRoot}/expense">Add Expense</a>
 	
-	<c:forEach var="expense" items="${expenses}">
+	<c:forEach var="expense" items="${expense}">
 		
 		<div>
 			<h3>${expense.expensename}</h3>
 			<p>&#8377;${expense.amount}</p>
+			<a herf="${contextRoot}/expense/${expense.id}">Edit</a>
 		</div>
 		
 	</c:forEach>
